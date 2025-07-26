@@ -19,13 +19,6 @@ class Engine{
             this->horsepower =horsepower;
             this->fuelType = fuelType;
         }
-
-        void setEngineData(int horsepower, string fuelType){
-            this->horsepower =horsepower;
-            this->fuelType = fuelType;
-        }
-
-
 };
 
 class Car{
@@ -39,11 +32,7 @@ class Car{
             brand= "Nan";
             price=0;
         }
-        Car(string brand, double price, int horsepower, string fuelType){
-            e.setEngineData(horsepower, fuelType);
-            this -> brand = brand;
-            this -> price = price;
-        }
+        Car(const Engine &eng, string brand, double price): e(eng), brand(brand), price(price) {}
 
         void showCarDetails(){
             cout << "Car Band: " << brand << endl;
@@ -57,7 +46,8 @@ class Car{
 
 int main(){
 
-    Car c("Volvo", 100000, 756, "Petrol");
+    Engine e(756, "Petrol");
+    Car c(e, "Volvo", 100000);
     c.showCarDetails();
     return 0;
 
