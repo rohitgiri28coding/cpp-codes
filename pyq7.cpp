@@ -21,4 +21,4 @@ int main ()
     return 0;
 }
 
-// OUTPUT: 6    
+// OUTPUT: 

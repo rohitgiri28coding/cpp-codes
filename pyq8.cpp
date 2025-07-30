@@ -15,4 +15,4 @@ void print()
     cout<< "Hi";
 }
 
-// OUTPUT: Compile Error
+// OUTPUT: 

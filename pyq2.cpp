@@ -17,4 +17,4 @@ int main ()
     return 0;
 }
 
-//  OUTPUT: 55;46.8
+//  OUTPUT: 

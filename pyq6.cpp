@@ -18,4 +18,4 @@ int main ()
     return 0;
 }
 
-// OUTPUT: c1= 50, c2= 50; c1= 10, c2= 50 
+// OUTPUT: 
